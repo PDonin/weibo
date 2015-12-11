@@ -46,7 +46,7 @@
     pageControl.numberOfPages = PAGENUM;
     self.pageControl = pageControl;
     
-//    pageControl.userInteractionEnabled = NO;
+    pageControl.userInteractionEnabled = NO;
     
     [self.view addSubview:pageControl];
 }

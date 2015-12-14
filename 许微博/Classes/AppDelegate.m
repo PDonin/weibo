@@ -12,6 +12,8 @@
 #import "XUTabBarViewController.h"
 #import <objc/runtime.h>
 #import "XUNewfeatureViewController.h"
+#import "XUOAuthViewController.h"
+#import "XUAccount.h"
 @interface AppDelegate ()
 
 @end
@@ -20,14 +22,37 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-//    UITabBarController *tabBarVC =  [[XUTabBarViewController alloc]init];
-//    self.window.rootViewController  = tabBarVC;
-    self.window.rootViewController = [[XUNewfeatureViewController alloc]init];
-    [self.window makeKeyAndVisible];
+    NSString *document = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *path = [document stringByAppendingPathComponent:@"account.data"];
+    XUAccount *account = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
     
-    //=======================
+    if (account == nil) {
+        self.window.rootViewController = [[XUOAuthViewController alloc]init];
+    } else {
+        
+        //获取储存在沙盒中得版本号
+        NSString *version = [[NSUserDefaults standardUserDefaults]objectForKey:@"CFBundleVersion"];
+        
+        //当前软件的版本从info.plist中取
+        NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+        NSString *currentVersion = infoDictionary[@"CFBundleVersion"];
+        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:@"CFBundleVersion"];
+        [[NSUserDefaults standardUserDefaults]synchronize];//赶紧写入
+        if ([version isEqualToString:currentVersion]) {
+            UITabBarController *tabBarVC =  [[XUTabBarViewController alloc]init];
+            self.window.rootViewController  = tabBarVC;
+        }else {
+            self.window.rootViewController = [[XUNewfeatureViewController alloc]init];
+        }
+    }
+    
+    /*
+    */
+
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

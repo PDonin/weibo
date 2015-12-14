@@ -16,6 +16,7 @@
 
 -(void)setContentController:(UIViewController *)contentController
 {
+    //设置下拉菜单的内容
     _contentController = contentController;
     self.content = contentController.view;
 }

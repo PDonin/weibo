@@ -84,30 +84,11 @@
     // 3.发送请求
     [mgr POST:@"https://api.weibo.com/oauth2/access_token" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
         
-        
         XUAccount *account = [XUAccount accountWithDict:responseObject];
         [XUAccountManager saveAccount:account];
         
+        [UIWindow switchRootViewController];
         
-        //获取储存在沙盒中得版本号
-        NSString *version = [[NSUserDefaults standardUserDefaults]objectForKey:@"CFBundleVersion"];
-        
-        //当前软件的版本从info.plist中取
-        NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-        
-        NSString *currentVersion = infoDictionary[@"CFBundleVersion"];
-        
-        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:@"CFBundleVersion"];
-        [[NSUserDefaults standardUserDefaults]synchronize];//赶紧写入
-        
-        UIWindow *window = [UIApplication sharedApplication].keyWindow;
-        if ([version isEqualToString:currentVersion]) {
-            UITabBarController *tabBarVC =  [[XUTabBarViewController alloc]init];
-            window.rootViewController  = tabBarVC;
-        }else {
-            window.rootViewController = [[XUNewfeatureViewController alloc]init];
-        }
-
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [MBProgressHUD hideHUD];
     }];

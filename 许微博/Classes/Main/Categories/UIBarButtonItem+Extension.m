@@ -1,15 +1,14 @@
 //
-//  UIBarButtonItem+XUExtension.m
+//  UIBarButtonItem+Extension.m
 //  许微博
 //
-//  Created by 许继广 on 15/12/7.
+//  Created by 许继广 on 15/12/15.
 //  Copyright (c) 2015年 许继广. All rights reserved.
 //
 
-#import "UIBarButtonItem+XUExtension.h"
+#import "UIBarButtonItem+Extension.h"
 
-@implementation UIBarButtonItem (XUExtension)
-
+@implementation UIBarButtonItem (Extension)
 +(instancetype)buttonItemWithImage:(NSString *)image selectedImage:(NSString *)selectedImage target:(id)target selector:(SEL)selector
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -21,6 +20,6 @@
     btn.size = nor_img.size;
     UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:btn];
     return item;
-
+    
 }
 @end

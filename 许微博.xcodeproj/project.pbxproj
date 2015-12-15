@@ -10,7 +10,6 @@
 		934C370C1C1FB1EA009934D6 /* XUAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 934C370B1C1FB1EA009934D6 /* XUAccountManager.m */; };
 		9354A88D1C17BF9000D5079D /* XUNewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9354A88C1C17BF9000D5079D /* XUNewfeatureViewController.m */; };
 		935744761C16E93100BBE57F /* XUTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 935744751C16E93100BBE57F /* XUTabBar.m */; };
-		935E778B1C13C54C0015AE32 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 935E778A1C13C54C0015AE32 /* UIView+Extension.m */; };
 		936371851C1EEA6500CD9E31 /* XUAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 936371841C1EEA6500CD9E31 /* XUAccount.m */; };
 		9363718C1C1EEF2200CD9E31 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 936371881C1EEF2200CD9E31 /* MBProgressHUD+MJ.m */; };
 		9363718D1C1EEF2200CD9E31 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 936371891C1EEF2200CD9E31 /* MBProgressHUD.bundle */; };
@@ -22,6 +21,9 @@
 		93696C671C12AFBE00C63910 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93696C651C12AFBE00C63910 /* main.m */; };
 		936AA7291C1BF5F500076085 /* XUOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936AA7281C1BF5F500076085 /* XUOAuthViewController.m */; };
 		93724ADD1C16703B00CA6DC2 /* XUSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 93724ADC1C16703B00CA6DC2 /* XUSearchBar.m */; };
+		9375F0211C20316300873429 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9375F0201C20316300873429 /* UIWindow+Extension.m */; };
+		9375F0271C2033B100873429 /* UIView+XUExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9375F0261C2033B100873429 /* UIView+XUExtension.m */; };
+		937B2C301C2035A60048BA27 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 937B2C2F1C2035A60048BA27 /* UIBarButtonItem+Extension.m */; };
 		9382799A1C1C06CC0007235B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 938279881C1C06CB0007235B /* AFHTTPRequestOperation.m */; };
 		9382799B1C1C06CC0007235B /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9382798A1C1C06CB0007235B /* AFHTTPRequestOperationManager.m */; };
 		9382799C1C1C06CC0007235B /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9382798C1C1C06CB0007235B /* AFHTTPSessionManager.m */; };
@@ -31,7 +33,6 @@
 		938279A01C1C06CC0007235B /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 938279951C1C06CB0007235B /* AFURLRequestSerialization.m */; };
 		938279A11C1C06CC0007235B /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 938279971C1C06CC0007235B /* AFURLResponseSerialization.m */; };
 		938279A21C1C06CC0007235B /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 938279991C1C06CC0007235B /* AFURLSessionManager.m */; };
-		938764111C15A96D00F92496 /* UIBarButtonItem+XUExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 938764101C15A96D00F92496 /* UIBarButtonItem+XUExtension.m */; };
 		938764181C15B37400F92496 /* XUDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938764151C15B37400F92496 /* XUDiscoverViewController.m */; };
 		9387641F1C15B37B00F92496 /* XUHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9387641C1C15B37B00F92496 /* XUHomeViewController.m */; };
 		9387642C1C15B38500F92496 /* XUProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938764231C15B38500F92496 /* XUProfileViewController.m */; };
@@ -59,8 +60,6 @@
 		9354A88C1C17BF9000D5079D /* XUNewfeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUNewfeatureViewController.m; sourceTree = "<group>"; };
 		935744741C16E93100BBE57F /* XUTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUTabBar.h; sourceTree = "<group>"; };
 		935744751C16E93100BBE57F /* XUTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUTabBar.m; sourceTree = "<group>"; };
-		935E77891C13C54C0015AE32 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		935E778A1C13C54C0015AE32 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		936371831C1EEA6500CD9E31 /* XUAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUAccount.h; sourceTree = "<group>"; };
 		936371841C1EEA6500CD9E31 /* XUAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUAccount.m; sourceTree = "<group>"; };
 		936371871C1EEF2200CD9E31 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
@@ -83,6 +82,12 @@
 		936AA7281C1BF5F500076085 /* XUOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUOAuthViewController.m; sourceTree = "<group>"; };
 		93724ADB1C16703B00CA6DC2 /* XUSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUSearchBar.h; sourceTree = "<group>"; };
 		93724ADC1C16703B00CA6DC2 /* XUSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUSearchBar.m; sourceTree = "<group>"; };
+		9375F01F1C20316300873429 /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
+		9375F0201C20316300873429 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
+		9375F0251C2033B100873429 /* UIView+XUExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XUExtension.h"; sourceTree = "<group>"; };
+		9375F0261C2033B100873429 /* UIView+XUExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XUExtension.m"; sourceTree = "<group>"; };
+		937B2C2E1C2035A60048BA27 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		937B2C2F1C2035A60048BA27 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		938279871C1C06CB0007235B /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		938279881C1C06CB0007235B /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		938279891C1C06CB0007235B /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -102,8 +107,6 @@
 		938279971C1C06CC0007235B /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		938279981C1C06CC0007235B /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		938279991C1C06CC0007235B /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		9387640F1C15A96D00F92496 /* UIBarButtonItem+XUExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XUExtension.h"; sourceTree = "<group>"; };
-		938764101C15A96D00F92496 /* UIBarButtonItem+XUExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XUExtension.m"; sourceTree = "<group>"; };
 		938764141C15B37400F92496 /* XUDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUDiscoverViewController.h; sourceTree = "<group>"; };
 		938764151C15B37400F92496 /* XUDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUDiscoverViewController.m; sourceTree = "<group>"; };
 		9387641B1C15B37B00F92496 /* XUHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUHomeViewController.h; sourceTree = "<group>"; };
@@ -147,17 +150,6 @@
 				9354A88C1C17BF9000D5079D /* XUNewfeatureViewController.m */,
 			);
 			path = NewFeature;
-			sourceTree = "<group>";
-		};
-		935E77881C13C4F60015AE32 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				935E77891C13C54C0015AE32 /* UIView+Extension.h */,
-				935E778A1C13C54C0015AE32 /* UIView+Extension.m */,
-				9387640F1C15A96D00F92496 /* UIBarButtonItem+XUExtension.h */,
-				938764101C15A96D00F92496 /* UIBarButtonItem+XUExtension.m */,
-			);
-			path = Categories;
 			sourceTree = "<group>";
 		};
 		936371821C1EEA4900CD9E31 /* Models */ = {
@@ -204,7 +196,6 @@
 		93696C3B1C12A2F700C63910 /* 许微博 */ = {
 			isa = PBXGroup;
 			children = (
-				935E77881C13C4F60015AE32 /* Categories */,
 				93696C621C12AFBD00C63910 /* Classes */,
 				93696C491C12A2F700C63910 /* Images.xcassets */,
 				93696C4B1C12A2F700C63910 /* LaunchScreen.xib */,
@@ -449,6 +440,12 @@
 		9387642F1C15B38E00F92496 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				9375F01F1C20316300873429 /* UIWindow+Extension.h */,
+				9375F0201C20316300873429 /* UIWindow+Extension.m */,
+				9375F0251C2033B100873429 /* UIView+XUExtension.h */,
+				9375F0261C2033B100873429 /* UIView+XUExtension.m */,
+				937B2C2E1C2035A60048BA27 /* UIBarButtonItem+Extension.h */,
+				937B2C2F1C2035A60048BA27 /* UIBarButtonItem+Extension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -595,6 +592,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				938279A21C1C06CC0007235B /* AFURLSessionManager.m in Sources */,
+				9375F0211C20316300873429 /* UIWindow+Extension.m in Sources */,
 				9382799F1C1C06CC0007235B /* AFURLConnectionOperation.m in Sources */,
 				936371851C1EEA6500CD9E31 /* XUAccount.m in Sources */,
 				935744761C16E93100BBE57F /* XUTabBar.m in Sources */,
@@ -603,8 +601,8 @@
 				938764381C15B38E00F92496 /* XUNavigationController.m in Sources */,
 				934C370C1C1FB1EA009934D6 /* XUAccountManager.m in Sources */,
 				9387642C1C15B38500F92496 /* XUProfileViewController.m in Sources */,
+				9375F0271C2033B100873429 /* UIView+XUExtension.m in Sources */,
 				93F7CD7C1C16A1C500AC9F89 /* XUDropdownMenu.m in Sources */,
-				938764111C15A96D00F92496 /* UIBarButtonItem+XUExtension.m in Sources */,
 				9382799E1C1C06CC0007235B /* AFSecurityPolicy.m in Sources */,
 				9354A88D1C17BF9000D5079D /* XUNewfeatureViewController.m in Sources */,
 				93F7CD7F1C16B63800AC9F89 /* XUTitleMenuViewController.m in Sources */,
@@ -616,10 +614,10 @@
 				9363718C1C1EEF2200CD9E31 /* MBProgressHUD+MJ.m in Sources */,
 				93696C661C12AFBE00C63910 /* AppDelegate.m in Sources */,
 				9387641F1C15B37B00F92496 /* XUHomeViewController.m in Sources */,
-				935E778B1C13C54C0015AE32 /* UIView+Extension.m in Sources */,
 				938764391C15B38E00F92496 /* XUTabBarViewController.m in Sources */,
 				938279A01C1C06CC0007235B /* AFURLRequestSerialization.m in Sources */,
 				9382799A1C1C06CC0007235B /* AFHTTPRequestOperation.m in Sources */,
+				937B2C301C2035A60048BA27 /* UIBarButtonItem+Extension.m in Sources */,
 				938279A11C1C06CC0007235B /* AFURLResponseSerialization.m in Sources */,
 				936AA7291C1BF5F500076085 /* XUOAuthViewController.m in Sources */,
 				9363718E1C1EEF2200CD9E31 /* MBProgressHUD.m in Sources */,

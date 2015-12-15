@@ -24,6 +24,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    /*
+     这句代码必须写在前面，否则会导致在分类中取得的UIWindow为空
+     */    
+    [self.window makeKeyAndVisible];
+    
+    /*
+     1、UIWindow的分类、UIWindowManager
+     2、UIViewController分类、UIViewControllerManager
+     */
+    
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     XUAccount *account = [XUAccountManager account];
@@ -32,26 +42,8 @@
         self.window.rootViewController = [[XUOAuthViewController alloc]init];
     } else {
         
-        //获取储存在沙盒中得版本号
-        NSString *version = [[NSUserDefaults standardUserDefaults]objectForKey:@"CFBundleVersion"];
-        
-        //当前软件的版本从info.plist中取
-        NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-        NSString *currentVersion = infoDictionary[@"CFBundleVersion"];
-        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:@"CFBundleVersion"];
-        [[NSUserDefaults standardUserDefaults]synchronize];//赶紧写入
-        if ([version isEqualToString:currentVersion]) {
-            UITabBarController *tabBarVC =  [[XUTabBarViewController alloc]init];
-            self.window.rootViewController  = tabBarVC;
-        }else {
-            self.window.rootViewController = [[XUNewfeatureViewController alloc]init];
-        }
     }
     
-    /*
-    */
-
-    [self.window makeKeyAndVisible];
     return YES;
 }
 

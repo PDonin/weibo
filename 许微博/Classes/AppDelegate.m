@@ -14,6 +14,7 @@
 #import "XUNewfeatureViewController.h"
 #import "XUOAuthViewController.h"
 #import "XUAccount.h"
+#import "XUAccountManager.h"
 @interface AppDelegate ()
 
 @end
@@ -25,9 +26,7 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    NSString *document = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    NSString *path = [document stringByAppendingPathComponent:@"account.data"];
-    XUAccount *account = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    XUAccount *account = [XUAccountManager account];
     
     if (account == nil) {
         self.window.rootViewController = [[XUOAuthViewController alloc]init];

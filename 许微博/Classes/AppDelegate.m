@@ -24,9 +24,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     /*
      这句代码必须写在前面，否则会导致在分类中取得的UIWindow为空
-     */    
+     */
     [self.window makeKeyAndVisible];
     
     /*
@@ -34,14 +35,13 @@
      2、UIViewController分类、UIViewControllerManager
      */
     
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     XUAccount *account = [XUAccountManager account];
     
     if (account == nil) {
         self.window.rootViewController = [[XUOAuthViewController alloc]init];
     } else {
-        
+        [UIWindow switchRootViewController];
     }
     
     return YES;

@@ -13,6 +13,7 @@
 #import "XUAccount.h"
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+MJ.h"
+#import "XUAccountManager.h"
 
 @interface XUOAuthViewController () <UIWebViewDelegate>
 
@@ -83,11 +84,10 @@
     // 3.发送请求
     [mgr POST:@"https://api.weibo.com/oauth2/access_token" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
         
-        NSString *document = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-        NSString *path = [document stringByAppendingPathComponent:@"account.data"];
         
         XUAccount *account = [XUAccount accountWithDict:responseObject];
-        [NSKeyedArchiver archiveRootObject:account toFile:path];
+        [XUAccountManager saveAccount:account];
+        
         
         //获取储存在沙盒中得版本号
         NSString *version = [[NSUserDefaults standardUserDefaults]objectForKey:@"CFBundleVersion"];

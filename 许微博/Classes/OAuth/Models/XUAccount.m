@@ -12,7 +12,10 @@
 +(instancetype)accountWithDict:(NSDictionary *)dict
 {
     XUAccount *account = [[self alloc]init];
-    [account setValuesForKeysWithDictionary:dict];
+    account.expires_in = dict[@"expires_in"];
+    account.uid = dict[@"uid"];
+    account.access_token = dict[@"access_token"];
+
     return account;
 }
 
@@ -21,7 +24,7 @@
     [aCoder encodeObject:_access_token forKey:@"access_token"];
     [aCoder encodeObject:_expires_in forKey:@"expires_in"];
     [aCoder encodeObject:_uid forKey:@"uid"];
-    [aCoder encodeObject:_remind_in forKey:@"remind_in"];
+    [aCoder encodeObject:_create_time forKey:@"create_time"];
 }
 -(instancetype)initWithCoder:(NSCoder *)aDecoder
 {
@@ -29,7 +32,7 @@
         _access_token = [aDecoder decodeObjectForKey:@"access_token"];
         _expires_in = [aDecoder decodeObjectForKey:@"expires_in"];
         _uid = [aDecoder decodeObjectForKey:@"uid"];
-        _remind_in = [aDecoder decodeObjectForKey:@"remind_in"];
+        _create_time = [aDecoder decodeObjectForKey:@"create_time"];
     }
     return self;
 }

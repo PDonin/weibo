@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		934C370C1C1FB1EA009934D6 /* XUAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 934C370B1C1FB1EA009934D6 /* XUAccountManager.m */; };
 		9354A88D1C17BF9000D5079D /* XUNewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9354A88C1C17BF9000D5079D /* XUNewfeatureViewController.m */; };
 		935744761C16E93100BBE57F /* XUTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 935744751C16E93100BBE57F /* XUTabBar.m */; };
 		935E778B1C13C54C0015AE32 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 935E778A1C13C54C0015AE32 /* UIView+Extension.m */; };
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		934C370A1C1FB1EA009934D6 /* XUAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUAccountManager.h; sourceTree = "<group>"; };
+		934C370B1C1FB1EA009934D6 /* XUAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUAccountManager.m; sourceTree = "<group>"; };
 		9354A88B1C17BF9000D5079D /* XUNewfeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUNewfeatureViewController.h; sourceTree = "<group>"; };
 		9354A88C1C17BF9000D5079D /* XUNewfeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUNewfeatureViewController.m; sourceTree = "<group>"; };
 		935744741C16E93100BBE57F /* XUTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUTabBar.h; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 			children = (
 				936371831C1EEA6500CD9E31 /* XUAccount.h */,
 				936371841C1EEA6500CD9E31 /* XUAccount.m */,
+				934C370A1C1FB1EA009934D6 /* XUAccountManager.h */,
+				934C370B1C1FB1EA009934D6 /* XUAccountManager.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -596,6 +601,7 @@
 				9382799C1C1C06CC0007235B /* AFHTTPSessionManager.m in Sources */,
 				9382799D1C1C06CC0007235B /* AFNetworkReachabilityManager.m in Sources */,
 				938764381C15B38E00F92496 /* XUNavigationController.m in Sources */,
+				934C370C1C1FB1EA009934D6 /* XUAccountManager.m in Sources */,
 				9387642C1C15B38500F92496 /* XUProfileViewController.m in Sources */,
 				93F7CD7C1C16A1C500AC9F89 /* XUDropdownMenu.m in Sources */,
 				938764111C15A96D00F92496 /* UIBarButtonItem+XUExtension.m in Sources */,

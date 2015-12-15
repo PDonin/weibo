@@ -15,7 +15,8 @@
 /** 当前授权用户的UID */
 @property(copy, nonatomic) NSNumber *uid;
 
-@property(copy, nonatomic) NSString *remind_in;
+/**access_token产生时间*/
+@property(strong,nonatomic) NSDate *create_time;
 
 +(instancetype)accountWithDict:(NSDictionary *)dict;
 @end

@@ -9,6 +9,7 @@
 #import "XUDropdownMenu.h"
 
 @interface XUDropdownMenu ()
+/** containerView为下拉菜单的背景,self就是大背景 */
 @property(nonatomic, weak) UIImageView *containerView;
 @end
 

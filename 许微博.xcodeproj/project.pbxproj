@@ -23,6 +23,7 @@
 		93724ADD1C16703B00CA6DC2 /* XUSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 93724ADC1C16703B00CA6DC2 /* XUSearchBar.m */; };
 		9375F0211C20316300873429 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9375F0201C20316300873429 /* UIWindow+Extension.m */; };
 		9375F0271C2033B100873429 /* UIView+XUExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9375F0261C2033B100873429 /* UIView+XUExtension.m */; };
+		937779AC1C2193AE009E2BD8 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 937779AB1C2193AE009E2BD8 /* Foundation+Log.m */; };
 		937B2C301C2035A60048BA27 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 937B2C2F1C2035A60048BA27 /* UIBarButtonItem+Extension.m */; };
 		9382799A1C1C06CC0007235B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 938279881C1C06CB0007235B /* AFHTTPRequestOperation.m */; };
 		9382799B1C1C06CC0007235B /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9382798A1C1C06CB0007235B /* AFHTTPRequestOperationManager.m */; };
@@ -86,6 +87,7 @@
 		9375F0201C20316300873429 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
 		9375F0251C2033B100873429 /* UIView+XUExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XUExtension.h"; sourceTree = "<group>"; };
 		9375F0261C2033B100873429 /* UIView+XUExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XUExtension.m"; sourceTree = "<group>"; };
+		937779AB1C2193AE009E2BD8 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		937B2C2E1C2035A60048BA27 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		937B2C2F1C2035A60048BA27 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		938279871C1C06CB0007235B /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -440,6 +442,7 @@
 		9387642F1C15B38E00F92496 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				937779AB1C2193AE009E2BD8 /* Foundation+Log.m */,
 				9375F01F1C20316300873429 /* UIWindow+Extension.h */,
 				9375F0201C20316300873429 /* UIWindow+Extension.m */,
 				9375F0251C2033B100873429 /* UIView+XUExtension.h */,
@@ -615,6 +618,7 @@
 				93696C661C12AFBE00C63910 /* AppDelegate.m in Sources */,
 				9387641F1C15B37B00F92496 /* XUHomeViewController.m in Sources */,
 				938764391C15B38E00F92496 /* XUTabBarViewController.m in Sources */,
+				937779AC1C2193AE009E2BD8 /* Foundation+Log.m in Sources */,
 				938279A01C1C06CC0007235B /* AFURLRequestSerialization.m in Sources */,
 				9382799A1C1C06CC0007235B /* AFHTTPRequestOperation.m in Sources */,
 				937B2C301C2035A60048BA27 /* UIBarButtonItem+Extension.m in Sources */,

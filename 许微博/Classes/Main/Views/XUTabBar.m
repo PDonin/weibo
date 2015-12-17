@@ -44,8 +44,6 @@
 -(void)layoutSubviews
 {
     [super layoutSubviews];
-    
-    XULog(@"%@",self.subviews);
     _plusButton.centerX = self.width * 0.5;
     _plusButton.centerY = self.height * 0.5;
     CGFloat tabBarButtonW = self.width / 5;

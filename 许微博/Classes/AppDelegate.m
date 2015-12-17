@@ -44,6 +44,14 @@
         [UIWindow switchRootViewController];
     }
     
+    /**为应用程序添加权限*/
+    float sysVersion = [[UIDevice currentDevice] systemVersion].floatValue;
+    if (sysVersion >= 8.0) {
+        UIUserNotificationType type = UIUserNotificationTypeBadge | UIUserNotificationTypeSound;
+        UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:type categories:nil];
+        [application registerUserNotificationSettings:setting];
+    }
+    
     return YES;
 }
 

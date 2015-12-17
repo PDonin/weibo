@@ -22,7 +22,7 @@
 
 -(void)tabBarDidClickPlusButton:(XUTabBar *)tabBar
 {
-    
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 10;
 }
 
 - (void)viewDidLoad {

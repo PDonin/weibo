@@ -13,9 +13,6 @@
 
 +(void)saveAccount:(XUAccount *)account
 {
-    //获取账号产生时间
-    NSDate *createTimer = [NSDate date];
-    account.create_time = createTimer;
     [NSKeyedArchiver archiveRootObject:account toFile:XUAccountPath];
 }
 

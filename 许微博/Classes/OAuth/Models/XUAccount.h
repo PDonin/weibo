@@ -18,5 +18,8 @@
 /**access_token产生时间*/
 @property(strong,nonatomic) NSDate *create_time;
 
+/** 存储用户名 */
+@property(nonatomic, strong) NSString *name;
+
 +(instancetype)accountWithDict:(NSDictionary *)dict;
 @end

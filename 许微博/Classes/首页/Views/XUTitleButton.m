@@ -31,4 +31,15 @@
     }
     return self;
 }
+
+-(void)setTitle:(NSString *)title forState:(UIControlState)state
+{
+    [super setTitle:title forState:state];
+    [self sizeToFit];
+}
+-(void)setImage:(UIImage *)image forState:(UIControlState)state
+{
+    [super setImage:image forState:state];
+    [self sizeToFit];
+}
 @end

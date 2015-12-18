@@ -47,6 +47,7 @@
         
         UIButton *button = (UIButton *)self.navigationItem.titleView;
         [button setTitle:name forState:UIControlStateNormal];
+
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         XULog(@"%@",error);
     }];
@@ -60,12 +61,10 @@
     
     XUTitleButton *titleBtn = [[XUTitleButton alloc]init];
     
-    titleBtn.width = 150;
-    titleBtn.height = 30;
-
     
     NSString *name = [XUAccountManager account].name;
     [titleBtn setTitle:name?name:@"首页" forState:UIControlStateNormal];
+    
     
 /*
     

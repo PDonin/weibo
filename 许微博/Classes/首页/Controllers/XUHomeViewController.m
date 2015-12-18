@@ -12,6 +12,7 @@
 #import "AFNetworking.h"
 #import "XUAccountManager.h"
 #import "XUAccount.h"
+#import "XUTitleButton.h"
 
 @interface XUHomeViewController () <XUDropdownMenuDelegate>
 
@@ -45,7 +46,7 @@
         [XUAccountManager saveAccount:account];
         
         UIButton *button = (UIButton *)self.navigationItem.titleView;
-        [button setTitle:name?name:@"首页" forState:UIControlStateNormal];
+        [button setTitle:name forState:UIControlStateNormal];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         XULog(@"%@",error);
     }];
@@ -57,30 +58,40 @@
     self.navigationItem.leftBarButtonItem = leftItem;
     self.navigationItem.rightBarButtonItem = rightItem;
     
-    UIButton *titleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    XUTitleButton *titleBtn = [[XUTitleButton alloc]init];
+    
     titleBtn.width = 150;
     titleBtn.height = 30;
 
-    [titleBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    titleBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-    [titleBtn setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
-    titleBtn.imageEdgeInsets = UIEdgeInsetsMake(0, 100, 0, 0);
-    titleBtn.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 50);
     
+    NSString *name = [XUAccountManager account].name;
+    [titleBtn setTitle:name?name:@"首页" forState:UIControlStateNormal];
+    
+/*
+    
+    //如果imageW返回的是点坐标的值，所以要根据屏幕设置
+    CGFloat imageW = titleBtn.imageView.width * [UIScreen mainScreen].scale;
+    CGFloat titleW = titleBtn.titleLabel.width * [UIScreen mainScreen].scale;
+    CGFloat left = titleW + imageW;
+
+    
+    titleBtn.imageEdgeInsets = UIEdgeInsetsMake(0, titleW, 0, 0);
+*/
     [titleBtn addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.titleView = titleBtn;
 
 }
 -(void)titleClick:(UIButton *)sender
 {
+    sender.selected = !sender.isSelected;
+    
     XUDropdownMenu *menu = [XUDropdownMenu menu];
     XUTitleMenuViewController *menuVc = [[XUTitleMenuViewController alloc]init];
     menuVc.view.height =44 *3;
     menuVc.view.width = 150;
     menu.contentController = menuVc;
     menu.delegate = self;
-    UIButton *btn = (UIButton *)self.navigationItem.titleView;
-    [btn setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateNormal];
+    
     [menu showFrom:sender];
 }
 

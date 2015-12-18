@@ -40,6 +40,7 @@
 		9387642D1C15B38500F92496 /* XUMessageCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938764291C15B38500F92496 /* XUMessageCenterViewController.m */; };
 		938764381C15B38E00F92496 /* XUNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938764321C15B38E00F92496 /* XUNavigationController.m */; };
 		938764391C15B38E00F92496 /* XUTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938764341C15B38E00F92496 /* XUTabBarViewController.m */; };
+		93E5ECF51C225069002765F8 /* XUTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E5ECF41C225069002765F8 /* XUTitleButton.m */; };
 		93F7CD7C1C16A1C500AC9F89 /* XUDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F7CD7B1C16A1C500AC9F89 /* XUDropdownMenu.m */; };
 		93F7CD7F1C16B63800AC9F89 /* XUTitleMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F7CD7E1C16B63800AC9F89 /* XUTitleMenuViewController.m */; };
 /* End PBXBuildFile section */
@@ -121,6 +122,8 @@
 		938764321C15B38E00F92496 /* XUNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUNavigationController.m; sourceTree = "<group>"; };
 		938764331C15B38E00F92496 /* XUTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUTabBarViewController.h; sourceTree = "<group>"; };
 		938764341C15B38E00F92496 /* XUTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUTabBarViewController.m; sourceTree = "<group>"; };
+		93E5ECF31C225069002765F8 /* XUTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUTitleButton.h; sourceTree = "<group>"; };
+		93E5ECF41C225069002765F8 /* XUTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUTitleButton.m; sourceTree = "<group>"; };
 		93F7CD7A1C16A1C500AC9F89 /* XUDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUDropdownMenu.h; sourceTree = "<group>"; };
 		93F7CD7B1C16A1C500AC9F89 /* XUDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUDropdownMenu.m; sourceTree = "<group>"; };
 		93F7CD7D1C16B63800AC9F89 /* XUTitleMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUTitleMenuViewController.h; sourceTree = "<group>"; };
@@ -357,6 +360,8 @@
 		9387641E1C15B37B00F92496 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				93E5ECF31C225069002765F8 /* XUTitleButton.h */,
+				93E5ECF41C225069002765F8 /* XUTitleButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -615,6 +620,7 @@
 				93724ADD1C16703B00CA6DC2 /* XUSearchBar.m in Sources */,
 				9387642D1C15B38500F92496 /* XUMessageCenterViewController.m in Sources */,
 				9363718C1C1EEF2200CD9E31 /* MBProgressHUD+MJ.m in Sources */,
+				93E5ECF51C225069002765F8 /* XUTitleButton.m in Sources */,
 				93696C661C12AFBE00C63910 /* AppDelegate.m in Sources */,
 				9387641F1C15B37B00F92496 /* XUHomeViewController.m in Sources */,
 				938764391C15B38E00F92496 /* XUTabBarViewController.m in Sources */,
